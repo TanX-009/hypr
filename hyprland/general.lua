@@ -8,6 +8,12 @@ hl.config({
 		smart_split = false,
 		smart_resizing = false,
 	},
+	scrolling = {
+		column_width = 0.75,
+		direction = "right",
+		fullscreen_on_one_column = false,
+		explicit_column_widths = "0.5,0.75,1",
+	},
 	-- █▀▄▀█ █ █▀ █▀▀
 	-- █░▀░█ █ ▄█ █▄▄
 	misc = {
@@ -16,10 +22,18 @@ hl.config({
 		mouse_move_enables_dpms = true,
 		-- vfr = true
 		enable_swallow = false,
-		swallow_regex = "(foot|kitty|allacritty|Alacritty)",
+		swallow_regex = "(foot|kitty|Alacritty)",
 		-- new_window_takes_over_fullscreen = 2
 		allow_session_lock_restore = true,
 		initial_workspace_tracking = false,
 		focus_on_activate = true,
 	},
 })
+
+-- scrolling {
+--
+-- cotumn_wiatn = 0.75]
+-- direction = rignt
+--
+-- tullscroen_on_one_colum = false
+-- explicit_column_wisths = 0.3, 0.5, 0.667, 1.0

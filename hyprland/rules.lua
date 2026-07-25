@@ -21,6 +21,8 @@ hl.window_rule({ match = { title = "^(Open Folder)(.*)$" }, center = true })
 hl.window_rule({ match = { title = "^(Open Folder)(.*)$" }, float = true })
 hl.window_rule({ match = { title = "^(Save As)(.*)$" }, center = true })
 hl.window_rule({ match = { title = "^(Save As)(.*)$" }, float = true })
+hl.window_rule({ match = { title = "terminal filechooser" }, center = true })
+hl.window_rule({ match = { title = "terminal filechooser" }, float = true })
 hl.window_rule({ match = { title = "^(Library)(.*)$" }, center = true })
 hl.window_rule({ match = { title = "^(Library)(.*)$" }, float = true })
 hl.window_rule({ match = { title = "^(File Upload)(.*)$" }, center = true })
@@ -127,7 +129,9 @@ hl.layer_rule({ match = { namespace = "launcher" }, blur = true })
 hl.layer_rule({ match = { namespace = "launcher" }, ignore_alpha = 0.5 })
 hl.layer_rule({ match = { namespace = "notifications" }, blur = true })
 hl.layer_rule({ match = { namespace = "notifications" }, ignore_alpha = 0.69 })
-hl.layer_rule({ match = { namespace = "logout_dialog" }, blur = true }) -- wlogout
+-- wlogout
+hl.layer_rule({ match = { namespace = "logout_dialog" }, animation = "fade" })
+hl.layer_rule({ match = { namespace = "logout_dialog" }, blur = false })
 
 -- ags
 hl.layer_rule({ match = { namespace = "sideleft.*" }, animation = "slide left" })

@@ -29,7 +29,7 @@ hl.config({
 		shadow = {
 			enabled = false,
 			range = 30,
-			offset = "0 2",
+			offset = { 0, 2 },
 			render_power = 4,
 			color = COLORS.secondary,
 		},
