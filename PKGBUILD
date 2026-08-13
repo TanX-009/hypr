@@ -10,6 +10,7 @@ depends=(
   "xdg-desktop-portal-hyprland"
   "wl-clipboard"
   "ntfs-3g"
+  "awww"
 )
 
 package() {
