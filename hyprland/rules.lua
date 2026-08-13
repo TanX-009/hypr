@@ -62,6 +62,8 @@ hl.window_rule({
 	match = { class = "org.freedesktop.impl.portal.desktop.kde" },
 	size = { "(monitor_w*0.60)", "(monitor_h*0.65)" },
 })
+hl.window_rule({ match = { class = "hyprland-share-picker" }, float = true })
+hl.window_rule({ match = { class = "hyprland-share-picker" }, center = true })
 hl.window_rule({ match = { class = "^(Zotero)$" }, float = true })
 hl.window_rule({
 	match = { class = "^(Zotero)$" },
